@@ -66,7 +66,6 @@ private:
             close(clientSocket);
             return;
         }
-        std::cout << "threat#: " <<std::this_thread::get_id() << std::endl;
         buffer[bytesRead] = '\0';
         std::string message(buffer);
 
